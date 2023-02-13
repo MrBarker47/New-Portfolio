@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: grey;
 
 }
 img {
@@ -8,87 +9,88 @@ img {
   margin-top: 7px;
 }
 
+h1 {
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 40px;
+  font-family: Hack, sans-serif;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  letter-spacing: 5px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: shine 5s linear infinite;
+  position: relative;
+  margin: 20px;
+}
 
-/* keyframes */
-
- @keyframes lights {
+@keyframes shine {
   0% {
-    color: hsl(230, 40%, 80%);
-    text-shadow:
-      0 0 1em hsla(320, 100%, 50%, 0.2),
-      0 0 0.125em hsla(320, 100%, 60%, 0.3),
-      -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
-      1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+    background-position-x: -500%;
   }
-  
-  30% { 
-    color: hsl(230, 80%, 90%);
-    text-shadow:
-      0 0 1em hsla(320, 100%, 50%, 0.5),
-      0 0 0.125em hsla(320, 100%, 60%, 0.5),
-      -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
-      0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
-  }
-  
-  40% { 
-    color: hsl(230, 100%, 95%);
-    text-shadow:
-      0 0 1em hsla(320, 100%, 50%, 0.5),
-      0 0 0.125em hsla(320, 100%, 90%, 0.5),
-      -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
-      0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
-  }
-  
-  70% {
-    color: hsl(230, 80%, 90%);
-    text-shadow:
-      0 0 1em hsla(320, 100%, 50%, 0.5),
-      0 0 0.125em hsla(320, 100%, 60%, 0.5),
-      0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
-      -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
-  }
-  
   100% {
-    color: hsl(230, 40%, 80%);
-    text-shadow:
-      0 0 1em hsla(320, 100%, 50%, 0.2),
-      0 0 0.125em hsla(320, 100%, 60%, 0.3),
-      1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
-      -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+    background-position-x: 500%;
   }
-  
 }
-
-body {
-  margin: 0;
-  font: 100% / 1.5 Raleway, sans-serif;
-  color: hsl(230, 100%, 95%);
-  background: linear-gradient(135deg, hsl(230, 40%, 12%), hsl(230, 20%, 7%));
-  height: 100vh;
- 
-}
-
-
-
-
-.about,
-.headline,
-.project {
-  margin: auto;
-   font-size: 50px;
-   font-weight: 500;
-  animation: lights 5s 750ms linear infinite;
-} 
-
-.contact {
-    margin-top: 30px;
-    margin-left: 50px;
-    font-size: 50px;
-   font-weight: 500;
-  animation: lights 5s 750ms linear infinite;
-}
-
 /* / Keyframes */
+
+/* toggle */
+
+.toggle label {
+	background-color: #777;
+	border: 2px solid #555;
+	border-radius: 50px;
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: all ease-in-out 0.3s;
+	width: 90px;
+	height: 40px;
+}
+
+.toggle input[type=checkbox] {
+	display: none;
+}
+
+
+.toggle label::after {
+	background-color: #555;
+	border-radius: 50%;
+	content: ' ';
+	cursor: pointer;
+	display: inline-block;
+	position: absolute;
+	left: 2px;
+	top: 2px;
+	transition: all ease-in-out 0.4s;
+	width: 30px;
+	height: 30px;
+}
+
+.toggle input[type=checkbox]:checked ~ label {
+	background-color: #00a0fc;
+	border-color: #006dc9;
+}
+
+.toggle input[type=checkbox]:checked ~ label::after {
+	background-color: #0054B0;
+	transform: translateX(50px);
+}
+
+body.light-theme {
+	background-color: whitesmoke;
+}
+
+
+ body.light-theme p {
+	color: black;
+}
+
+/* /toggle */
 
 .photo1 {
   border-radius: 50%;
@@ -124,7 +126,7 @@ body {
 }
 /* navbar */
 nav {
-  background-color:#3b1b66;
+  background-color: black;
   
 }
 
@@ -156,6 +158,9 @@ nav {
   margin-top: 30px;
 
 }
+.contact {
+  margin: 20px;
+}
 
 /* / About Me */
 
@@ -171,12 +176,14 @@ nav {
  }
 
  .card {
-  background-color:#3b1b66;
+  background-color:white;
   border-radius: 2%;
  }
 
+
 .speech, .speech1 {
-  color: white;
+  color: black;
+  margin: 4%;
 }
 
 .span1 {
@@ -194,55 +201,6 @@ nav {
 }
 /* /Project Section */
 
-/* @media screen and (min-width: 768px) {
-  .headline {
-    margin: 220px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 120px;
-    padding-left: 1px;
-  }
-
-  .about {
-    margin: 20px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 120px;
-    padding-left: 1px;
-  }
-
-  img {
-    width: 120px;
-    margin-top: 7px;
-  }
-
-
-.photo1 {
-  margin-bottom: 1px;
-  margin-left: 120px;
-  width: 200px;
-  height:220px;
-}
-
-  .navbar-nav {
-    margin-left: 60%;
-  }
-  .github {
-  margin-top: 20px;
-  width: 260px;
-  padding-right: 20%;
-  padding-left: 2%;
-}
-
-
-.linkedIn {
-  margin-top: 30px;
-  width: 260px;
-  padding-right: 20%;
-  padding-left: 2%;
- 
-}
-
-  
-  } */
 
   @media screen and (min-width: 1024px) {
     .headline {
@@ -252,6 +210,77 @@ nav {
       padding-left: 1px;
     }
 
+    .toggle label {
+      background-color: #777;
+      border: 2px solid #555;
+      border-radius: 50px;
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: all ease-in-out 0.3s;
+      width: 90px;
+      height: 40px;
+      margin-top: 2px;
+      margin-left: 20px;
+    }
+    
+    .toggle input[type=checkbox] {
+      display: none;
+    }
+    
+    
+    .toggle label::after {
+      background-color: #555;
+      border-radius: 50%;
+      content: ' ';
+      cursor: pointer;
+      display: inline-block;
+      position: absolute;
+      left: 2px;
+      top: 2px;
+      transition: all ease-in-out 0.4s;
+      width: 30px;
+      height: 30px;
+    }
+    
+    .toggle input[type=checkbox]:checked ~ label {
+      background-color: #00a0fc;
+      border-color: #006dc9;
+    }
+    
+    .toggle input[type=checkbox]:checked ~ label::after {
+      background-color: #0054B0;
+      transform: translateX(50px);
+    }
+    
+
+    h1 {
+      display: flex;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 40px;
+      font-family: Hack, sans-serif;
+      text-transform: uppercase;
+      background: linear-gradient(90deg, #000, #fff, #000);
+      letter-spacing: 5px;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-repeat: no-repeat;
+      background-size: 80%;
+      animation: shine 5s linear infinite;
+      position: relative;
+      margin: 200px;
+    }
+    
+    @keyframes shine {
+      0% {
+        background-position-x: -500%;
+      }
+      100% {
+        background-position-x: 500%;
+      }
+    }
     .github {
       margin-left: 20px;
       padding-right: 220px;
