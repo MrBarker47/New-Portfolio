@@ -41,15 +41,8 @@ h1 {
 /* toggle */
 
 .toggle label {
-	background-color: #777;
-	border: 2px solid #555;
-	border-radius: 50px;
-	cursor: pointer;
-	display: inline-block;
-	position: relative;
-	transition: all ease-in-out 0.3s;
-	width: 90px;
-	height: 40px;
+
+
 }
 
 .toggle input[type=checkbox] {
@@ -57,7 +50,7 @@ h1 {
 }
 
 
-.toggle label::after {
+/* .toggle label::after {
 	background-color: #555;
 	border-radius: 50%;
 	content: ' ';
@@ -69,17 +62,17 @@ h1 {
 	transition: all ease-in-out 0.4s;
 	width: 30px;
 	height: 30px;
-}
+} */
 
 .toggle input[type=checkbox]:checked ~ label {
-	background-color: #00a0fc;
-	border-color: #006dc9;
+
+
 }
 
-.toggle input[type=checkbox]:checked ~ label::after {
-	background-color: #0054B0;
+/* .toggle input[type=checkbox]:checked ~ label::after {
+
 	transform: translateX(50px);
-}
+} */
 
 body.light-theme {
 	background-color: whitesmoke;
@@ -211,27 +204,24 @@ nav {
     }
 
     .toggle label {
-      background-color: #777;
-      border: 2px solid #555;
-      border-radius: 50px;
       cursor: pointer;
+      color: lightgray;
       display: inline-block;
       position: relative;
       transition: all ease-in-out 0.3s;
       width: 90px;
       height: 40px;
-      margin-top: 2px;
+      margin-top: 4px;
       margin-left: 20px;
     }
     
-    .toggle input[type=checkbox] {
+     .toggle input[type=checkbox] {
       display: none;
     }
     
-    
-    .toggle label::after {
-      background-color: #555;
-      border-radius: 50%;
+     
+     .toggle label::after {
+
       content: ' ';
       cursor: pointer;
       display: inline-block;
@@ -239,19 +229,17 @@ nav {
       left: 2px;
       top: 2px;
       transition: all ease-in-out 0.4s;
-      width: 30px;
-      height: 30px;
     }
+     
+     .toggle input[type=checkbox]:checked ~ label {
+     color: rgba(245, 245, 107, 0.869);
+ 
+    } 
     
-    .toggle input[type=checkbox]:checked ~ label {
-      background-color: #00a0fc;
-      border-color: #006dc9;
-    }
-    
-    .toggle input[type=checkbox]:checked ~ label::after {
-      background-color: #0054B0;
+     .toggle input[type=checkbox]:checked ~ label::after {
+      color: rgba(245, 245, 107, 0.869);
       transform: translateX(50px);
-    }
+    } 
     
 
     h1 {
