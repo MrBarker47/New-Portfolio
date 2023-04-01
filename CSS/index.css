@@ -40,39 +40,52 @@ h1 {
 
 /* toggle */
 
-.toggle label {
-
-
-}
 
 .toggle input[type=checkbox] {
 	display: none;
 }
 
 
-/* .toggle label::after {
-	background-color: #555;
-	border-radius: 50%;
-	content: ' ';
-	cursor: pointer;
-	display: inline-block;
-	position: absolute;
-	left: 2px;
-	top: 2px;
-	transition: all ease-in-out 0.4s;
-	width: 30px;
-	height: 30px;
-} */
 
-.toggle input[type=checkbox]:checked ~ label {
-
-
+.toggle label {
+  cursor: pointer;
+  color: lightgray;
+  display: inline-block;
+  position: relative;
+  transition: all ease-in-out 0.3s;
+  width: 90px;
+  height: 40px;
+  margin-top: 4px;
+  margin-left: 1px;
 }
 
-/* .toggle input[type=checkbox]:checked ~ label::after {
+ .toggle input[type=checkbox] {
+  display: none;
+}
 
-	transform: translateX(50px);
-} */
+ 
+ .toggle label::after {
+
+  content: ' ';
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  transition: all ease-in-out 0.4s;
+}
+ 
+ .toggle input[type=checkbox]:checked ~ label {
+ color: rgba(245, 245, 107, 0.869);
+
+} 
+
+ .toggle input[type=checkbox]:checked ~ label::after {
+  color: rgba(245, 245, 107, 0.869);
+  transform: translateX(50px);
+} 
+
+
 
 body.light-theme {
 	background-color: whitesmoke;
@@ -195,6 +208,97 @@ nav {
 /* /Project Section */
 
 
+
+@media screen and (min-width: 768px) {
+  #projects {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  
+  .img {
+    width: 60%;
+    margin-left: 160px;
+   }
+  
+   .card {
+    background-color:white;
+    border-radius: 2%;
+   }
+  
+  
+  .speech, .speech1 {
+    color: black;
+    margin: 4%;
+    text-align: center;
+  }
+  .speech1 {
+    margin-top: 4px;
+  }
+  
+
+  
+  .app {
+    text-align: center;
+    background-color: aliceblue;
+    width: 100px;
+    border-radius: 20px;
+    margin-left: 304px;
+    margin-bottom: 20px;
+  }
+  
+  .github, .linkedIn {
+    width: 60%;
+    padding: 4px;
+    margin-left: -120px;
+  }
+
+  .navbar-nav {
+    margin-left: 40%;
+  }
+
+
+  .toggle label {
+    cursor: pointer;
+    color: lightgray;
+    display: inline-block;
+    position: relative;
+    transition: all ease-in-out 0.3s;
+    width: 90px;
+    height: 40px;
+    margin-top: 4px;
+    margin-left: 20px;
+  }
+  
+   .toggle input[type=checkbox] {
+    display: none;
+  }
+  
+   
+   .toggle label::after {
+
+    content: ' ';
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    transition: all ease-in-out 0.4s;
+  }
+   
+   .toggle input[type=checkbox]:checked ~ label {
+   color: rgba(245, 245, 107, 0.869);
+
+  } 
+  
+   .toggle input[type=checkbox]:checked ~ label::after {
+    color: rgba(245, 245, 107, 0.869);
+    transform: translateX(50px);
+  } 
+  
+
+}
+
+
   @media screen and (min-width: 1024px) {
     .headline {
       margin: 220px;
@@ -299,6 +403,7 @@ nav {
     
     .navbar-nav {
       margin-left: 70%;
+
     }
 
     .project-row1 {
