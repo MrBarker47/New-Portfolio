@@ -6,20 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="CSS/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="CSS/index.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
 <body>
-  <!-- <img src="img/White on Transparent.png" alt=""> -->
+
  <main>
     <nav class="navbar navbar-expand-md navbar-dark">
-            <img src="img/barkerthedev.png" alt=""> 
+            <a class="navbar-brand" href="index.html"><img src="img/barkerthedev.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
-                <a class="nav-item nav-link" href="index.html">Home</a>
+                <a class="nav-item nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
                 <a class="nav-item nav-link" href="aboutme.html">About</a>
                 <a class="nav-item nav-link" href="projects.html">Projects</a>
                 <a class="nav-item nav-link" href="Skills.html">Skills</a>
@@ -36,26 +36,91 @@
             </div>
           </nav>
 
-          <h1 class="main-h1">Welcome To My Page!</h1>
+
+          <h1 id="projects" class="project">Projects</h1>
+
+
+
+    </main>
+
+    <div>
+            <div id="project-row1" class="project-row1">
+                  <div class="card">
+                  <img class="img" src="img/Screenshot1.png" alt="">
+                <p class="speech"> Check out my Wheel Of Success project
+                  I use this project making HTML, CSS and JS.</p>
+                <p class="speech1">One of most challenges I faced with this project, was combining the conditional statement and the addEventListener together. I believe this project
+                  would be the one test my skills of my Js skills.
+                  
+                </p>
+                <a  class="app" href="https://mrbarker47.github.io/Game-Show-App/">View Site</a>
+
+                </div>
+                  
+                <hr>
+
+                <!-- <div class="card">
+                    <img class="img" src="img/Screenshot2.png" alt="">
+                    <p class="speech"> Check out this interactive-Photo-Gallery Project.</p>  
+                    <p class="speech1"> This project, I was using HTML, CSS and JS. The challenges I faced was using grid. 
+                       
+                    </p>
+
+                    <a  class="app" href="https://mrbarker47.github.io/Interactive-Photo-Gallery/">View Site</a>
+                  </div> -->
+
+                  <div class="card">
+                    <img  class="img" src="img/Screenshot3.png" alt="">
+                      <p class="speech">This third project is The Web-DashBoard, this was use with HTML, CSS and JS</p>
+                     <p class="speech1">The one challenge I faced with this project
+                      was getting used to the grid again.But after playing with the grid-garden and doing some other research I was able to 
+                      get this project up and running. 
+                    </p>
+                      <a class="app" href="https://mrbarker47.github.io/Web-DashBoard/">View Site</a>
+                   
+                  </div>
           
+                  </div>
 
-        </main>
 
-        <div class="footer-basic">
-          <footer>
-              <div class="social" id="social"><a href="https://www.linkedin.com/in/jamaal-barker-2a23615b/"><i class="fa-brands fa-linkedin" style="color: #ffffff;"></i></a></div>
-              <div class="social" id="social"><a href="https://github.com/MrBarker47"><i class="fa-brands fa-github" style="color: #ffffff;"></i></a></div>
-              <div class="social" id="social"><a href="mailto:jebarker7@gmail.com"<i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
-              </a>
-              </div>
-              <ul class="list-inline">
-                  <li class="list-inline-item"><a href="index.html">Home</a></li>
-                  <li class="list-inline-item"><a href="aboutme.html">About</a></li>
-                  <li class="list-inline-item"><a href="projects.html">Projects</a></li>
-                  <li class="list-inline-item"><a href="Skills.html">Skills</a></li>
-              </ul> 
-               <p class="copyright">BarkerTheDev © 2023</p>
-          </footer>
+                <hr>
+
+                <div id="project-row2" class="project-row2">
+    
+
+                <hr>
+<!-- 
+                <div class="card">
+                  <img class="img" src="img/Screenshot4.png" alt="">
+                  <p class="speech">My last project is Registration-Form, with this project I used 
+                    HTML and CSS</p>
+                    <p class="speech1">The challenges I faced with this project, was using the border-lines</p>
+
+                    <a class="app" href="https://mrbarker47.github.io/Registration-Form-Project/">Vist Site</a>
+                
+                </div>  -->
+              </div> 
+            </div>
+
+            <div class="footer-basic">
+              <footer>
+                  <div class="social" id="linkedIn"><a href="https://www.linkedin.com/in/jamaal-barker-2a23615b/"><i class="fa-brands fa-linkedin" style="color: #ffffff;" ></i></a></div>
+                  <div class="social"><a href="https://github.com/MrBarker47"><i class="fa-brands fa-github" style="color: #ffffff;"></i></a></div>
+                  <div class="social" id="social"><a href="mailto:jebarker7@gmail.com"<i class="fa-solid fa-envelope" style="color: #ffffff;"></i></a></div>
+                  <ul class="list-inline">
+                      <li class="list-inline-item"><a href="index.html">Home</a></li>
+                      <li class="list-inline-item"><a href="aboutme.html">About</a></li>
+                      <li class="list-inline-item"><a href="projects.html">Projects</a></li>
+                      <li class="list-inline-item"><a href="Skills.html">Skills</a></li>
+                  </ul> 
+                   <p class="copyright">BarkerTheDev © 2023</p>
+              </footer>
+    
+
+
+
+
+     
         <script src="JS/index.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
