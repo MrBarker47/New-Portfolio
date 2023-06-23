@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+
 
 body {
+  font-family: "Roboto";
     margin: 0;
     padding: 0;
-  background-color: black;
+    background-color: black;
     min-height: 100%;
    display: flex;
    flex-direction: column;
@@ -37,15 +41,75 @@ h1 {
 
 
 
-@keyframes shine {
-  0% {
-    background-position-x: -500%;
-  }
-  100% {
-    background-position-x: 500%;
-  }
+p {
+  text-shadow: 0 0 7px rgba(255,255,255,.3), 0 0 3px rgba(255,255,255,.3);
+}
+.container {
+  color: #e5e5e5;
+  font-size: 2.26rem;
+  text-transform: uppercase;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+
 }
 
+.animation {
+  height:50px;
+  overflow:hidden;
+  margin-left: 1rem;
+}
+
+.animation > div > div {
+  padding: 0.25rem 0.75rem;
+  height:2.81rem;
+  margin-bottom: 2.81rem;
+  display:inline-block;
+}
+
+.animation div:first-child {
+  animation: text-animation 7s infinite;
+}
+
+
+.first div {
+  background-color:red;
+  
+
+}
+.second div {
+  background-color:blue;
+  
+}
+.third div {
+  background-color: coral;
+}
+
+
+
+@keyframes text-animation {
+  0% {margin-top: 0;}
+  10% {margin-top: 0;}
+  20% {margin-top: -5.62rem;}
+  30% {margin-top: -5.62rem;}
+  40% {margin-top: -11.24rem;}
+  60% {margin-top: -11.24rem;}
+  70% {margin-top: -5.62rem;}
+  80% {margin-top: -5.62rem;}
+  90% {margin-top: 0;}
+  100% {margin-top: 0;}
+} 
+
+
+button {
+  border: none;
+  border-radius: 20%;
+  background-color: maroon;
+  padding: 0.4%;
+  margin-right: 20px;
+}
 
 /* toggle */
 
@@ -350,6 +414,12 @@ form {
       font-size: xx-large;
     }
 
+
+
+
+
+/* =====  Media Screen for 768px ====== */
+
 @media screen and (min-width: 768px) {
   #projects {
     margin-top: 20px;
@@ -403,6 +473,8 @@ form {
       background-position-x: 500%;
     }
   }
+
+  
 
   
   .github, .linkedIn {
@@ -482,12 +554,29 @@ form {
 }
 
 
-  @media screen and (min-width: 1024px) {
+
+
+/* =====  Media Screen for 1024px ====== */
+
+
+
+@media screen and (min-width: 1024px) {
     .headline {
       margin: 220px;
       font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       font-size: 120px;
       padding-left: 1px;
+    }
+
+   
+
+    #background {
+      background-image: url(/img/IMG_4682.jpeg);
+      background-size: cover;
+      background-blend-mode: color;
+      background-position: 1px;
+      background-color: blue;
+      /* opacity: 0.2; */
     }
 
     .toggle label {
@@ -648,7 +737,7 @@ form {
         }
     
         .skills {
-          font-size: xx-large;
+          font-size: x-large;
           padding-left: 60px;
           margin-left: 2px;
         }
