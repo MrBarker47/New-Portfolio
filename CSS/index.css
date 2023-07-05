@@ -6,11 +6,19 @@ body {
   font-family: "Roboto";
     margin: 0;
     padding: 0;
-    background-color: black;
+    background-image: url(/img/IMG_0469.jpeg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-blend-mode: color-burn;
+    background-color: rgb(107, 91, 91);
     min-height: 100%;
    display: flex;
    flex-direction: column;
 
+
+
+
+   
 }
 img {
   width: 90px;
@@ -108,12 +116,12 @@ button {
   border-radius: 20%;
   background-color: maroon;
   padding: 0.4%;
-  margin-right: 20px;
+  margin-left: 120px;
 }
 
 /* toggle */
 
-
+/* 
 .toggle input[type=checkbox] {
 	display: none;
 }
@@ -156,7 +164,7 @@ button {
  .toggle input[type=checkbox]:checked ~ label::after {
   color: rgba(245, 245, 107, 0.869);
   transform: translateX(50px);
-} 
+}  */
 
 
 
@@ -177,7 +185,7 @@ body.light-theme {
   border-radius: 50%;
   width: 100px;
   height: 120px;
-  margin-left: 160px;
+  margin-left: 120px;
   
 }
 
@@ -231,7 +239,7 @@ nav {
 
 /* About Me */
 .about {
-  margin-left: 160px;
+  margin-left: 50px;
   text-align: center;
   font-size: xx-large;
 }
@@ -239,15 +247,15 @@ nav {
 .aboutme {
   margin-left: 20px;
   margin-top: 30px;
-color: rgb(232, 163, 163);
+  color: rgb(241, 226, 226);
 
 }
 
-
+.resume {
+  display: flex;
+}
 
 /* Contact */
-
-
 
 .container {
   width: 100%;
@@ -499,7 +507,7 @@ form {
     text-align: center;
   }
   .photo1 {
-    margin-left: 370px;
+    margin-left: 420px;
   }
   .aboutme2 {
     text-align: center;
@@ -543,6 +551,14 @@ form {
     color: rgba(245, 245, 107, 0.869);
     transform: translateX(50px);
   } 
+  
+  button {
+    border: none;
+    border-radius: 20%;
+    background-color: maroon;
+    padding: 0.4%;
+    margin-left: 2px;
+  }
   
 
     /* skills */
@@ -672,6 +688,15 @@ form {
       margin-left: 20px;
     }
 
+
+    button {
+      border: none;
+      border-radius: 20%;
+      background-color: maroon;
+      padding: 0.4%;
+      margin-left: 1px;
+    }
+    
 
     img {
       width: 120px;
