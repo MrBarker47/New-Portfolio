@@ -586,14 +586,14 @@ form {
     }
 
    
-
+/* 
     #background {
       background-image: url(/img/IMG_4682.jpeg);
       background-size: cover;
       background-blend-mode: color;
       background-position: 1px;
       background-color: blue;
-      /* opacity: 0.2; */
+    
     }
 
     .toggle label {
@@ -633,7 +633,9 @@ form {
       color: rgba(245, 245, 107, 0.869);
       transform: translateX(50px);
     } 
-    
+     */
+
+	
     .main-h1 {
       margin-top: 200px;
       font-size: xx-large;
