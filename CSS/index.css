@@ -8,8 +8,8 @@ body {
     padding: 0;
    background-image: url(/Background-image.png);
     background-size:cover;
-    background-repeat:no-repeat;
-    background-blend-mode: color-burn;
+/*     background-repeat:no-repeat;
+    background-blend-mode: color-burn; */
     background-color: rgb(107, 91, 91);
     min-height: 100%;
    display: flex;
