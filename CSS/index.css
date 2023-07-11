@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:700');
-
+/* @import url('https://fonts.googleapis.com/css?family=Roboto:700'); */
 
 
 
@@ -515,7 +514,7 @@ form {
     margin-left: 30px;
   }
 
-  .toggle label {
+  /* .toggle label {
     cursor: pointer;
     color: lightgray;
     display: inline-block;
@@ -586,15 +585,8 @@ form {
     }
 
    
-/* 
-    #background {
-      background-image: url(/img/IMG_4682.jpeg);
-      background-size: cover;
-      background-blend-mode: color;
-      background-position: 1px;
-      background-color: blue;
-    
-    }
+
+
 
     .toggle label {
       cursor: pointer;
@@ -606,9 +598,9 @@ form {
       height: 40px;
       margin-top: 4px;
       margin-left: 20px;
-    }
+    } */
     
-     .toggle input[type=checkbox] {
+      .toggle input[type=checkbox] {
       display: none;
     }
     
@@ -634,8 +626,6 @@ form {
       transform: translateX(50px);
     } 
      */
-
-	
     .main-h1 {
       margin-top: 200px;
       font-size: xx-large;
