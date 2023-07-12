@@ -3,7 +3,7 @@
 
 
 body {
-   background-image: url(/Images/Background-image.png);
+   background-image: url(./Images/Background-image.png);
    background-size:cover;
    background-repeat:no-repeat;
    background-blend-mode: color-burn;
