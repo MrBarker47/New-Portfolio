@@ -3,17 +3,16 @@
 
 
 body {
-   background-image: url(./Images/Background-image.png);
+   background-image: url(/Images/Background-image.png);
    background-size:cover;
    background-repeat:no-repeat;
-   background-blend-mode: color-burn;
+   /* background-blend-mode: color; */
    font-family: "Roboto";
     margin: 0;
     padding: 0;
-    background-color: rgb(107, 91, 91);
+    /* background-color: rgba(51, 29, 29, 0.831); */
     min-height: 100%;
-   /* display: flex;
-   flex-direction: column; */
+
 }
 
 
@@ -48,7 +47,7 @@ h1 {
 
 
 p {
-  text-shadow: 0 0 7px rgba(255,255,255,.3), 0 0 3px rgba(255,255,255,.3);
+  text-shadow: 0 0 7px rgba(18, 7, 7, 0.3), 0 0 3px rgba(255,255,255,.3);
 }
 
 
@@ -506,43 +505,7 @@ form {
     
     }
 
-    .toggle label {
-      cursor: pointer;
-      color: lightgray;
-      display: inline-block;
-      position: relative;
-      transition: all ease-in-out 0.3s;
-      width: 90px;
-      height: 40px;
-      margin-top: 4px;
-      margin-left: 20px;
-    } */
-    
-      .toggle input[type=checkbox] {
-      display: none;
-    }
-    
-     
-     .toggle label::after {
 
-      content: ' ';
-      cursor: pointer;
-      display: inline-block;
-      position: absolute;
-      left: 2px;
-      top: 2px;
-      transition: all ease-in-out 0.4s;
-    }
-     
-     .toggle input[type=checkbox]:checked ~ label {
-     color: rgba(245, 245, 107, 0.869);
- 
-    } 
-    
-     .toggle input[type=checkbox]:checked ~ label::after {
-      color: rgba(245, 245, 107, 0.869);
-      transform: translateX(50px);
-    } 
      
     .main-h1 {
       margin-top: 200px;
