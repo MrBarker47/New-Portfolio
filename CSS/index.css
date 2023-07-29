@@ -3,14 +3,14 @@
 
 
 body {
-background-image: url(/Images/charles-adrien-fournier-g815W4LH4F8-unsplash.jpg);
-   background-size: cover;
-   background-repeat:no-repeat;
-   background-blend-mode: color;
-   font-family: "Roboto";
+    background-image: url(../Images/IMG_2907.jpeg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-blend-mode:color;
+    font-family: "Roboto";
     margin: 0;
     padding: 0;
-    background-color: rgba(51, 29, 29, 0.831);
+    background-color: rgba(11, 11, 45, 0.831);
     min-height: 100%;
 
 }
