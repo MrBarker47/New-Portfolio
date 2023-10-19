@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+\@import url('https://fonts.googleapis.com/css?family=Roboto:700');
 
 
 
@@ -32,7 +32,7 @@ h1 {
   font-size:25px;
   font-family: Hack, sans-serif;
   text-transform: uppercase;
-  background: linear-gradient(90deg, #f36868, #df6060, #5c3636);
+  background: linear-gradient(90deg, #6237ce, #e2e22a, #6d32d3);
   letter-spacing: 5px;
   -webkit-background-clip: text;
   background-clip: text;
@@ -82,16 +82,15 @@ p {
 
 
 .first div {
-  background-color:red;
+  background-color:rgb(245, 220, 32);
+  color: black;
   
 
 }
 .second div {
-  background-color:blue;
+  background-color:rgb(245, 220, 32);
+  color: black;
   
-}
-.third div {
-  background-color: coral;
 }
 
 
@@ -109,14 +108,6 @@ p {
   100% {margin-top: 0;}
 } 
 
-
-button {
-  border: none;
-  border-radius: 20%;
-  background-color: maroon;
-  padding: 0.4%;
-  margin-left: 120px;
-}
 
 
 
@@ -169,7 +160,7 @@ body.light-theme {
 }
 /* navbar */
 nav {
-  background-color: black;
+  background-color: rgb(55, 7, 101);
   
 }
 
@@ -203,8 +194,23 @@ nav {
 
 }
 
+button {
+  background-color: rgb(55, 7, 101);
+  border: none;
+  border-radius: 20%;
+  margin-left :24px;
+  
+}
+
+.aboutme2 {
+  margin-left: 120px;
+  
+}
+
+
 .resume {
   display: flex;
+
 }
 
 /* Contact */
@@ -248,26 +254,26 @@ form {
 
 /* Project Section */
   .project {
-    margin-left: 160px;
+    margin-left: 70px;
     text-align: center;
     font-size: x-large;
-  }
+}
 
  .project-row1, .project-row2{
-  margin: 20px;
+  padding: 30px 20px 2px;
+  /* margin-top: 220px; */
  }
 
  .img {
   width: 240px;
-  margin-left: 100px;
+  margin-left: 20px;
  
  }
 
  .card {
-  background-color:white;
   border-radius: 5%;
-
- }
+  
+}
 
 
 .speech, .speech1 {
@@ -298,10 +304,10 @@ form {
   right: 0;
   bottom: 0;
   width: 100%;
-  background-color: maroon;
+  background-color: rgb(55, 6, 101);
   color: white;
   text-align: center;
-  line-height: 1px;
+  line-height: -1px;
   text-decoration: none;
 }
 
@@ -392,8 +398,11 @@ form {
    }
   
    .card {
-    background-color:white;
+    /* background-color:white; */
     border-radius: 2%;
+    margin: 2px;
+    padding: 2px;
+
    }
   
   
@@ -413,7 +422,7 @@ form {
     font-size: 40px;
     font-family: Hack, sans-serif;
     text-transform: uppercase;
-    background: linear-gradient(90deg, #f36868, #df6060, #5c3636);
+    background: linear-gradient(90deg, #6237ce, #e2e22a, #6d32d3);
     letter-spacing: 5px;
     -webkit-background-clip: text;
     background-clip: text;
@@ -452,20 +461,28 @@ form {
   }
 
   .about {
-    margin-left: 47px;
+    margin-right: 130px;
+    font-size: 40px;
   }
 
   .aboutme {
     text-align: center;
+    margin-right: 100px;
   }
   .photo1 {
-    margin-left: 420px;
+    margin-right: 320px;
   }
   .aboutme2 {
     text-align: center;
     margin-left: 30px;
   }
 
+  button {
+    background-color: rgb(55, 7, 101);
+    border: none;
+    border-radius: 20%;
+    margin-right: 60px;    
+  }
 
     /* skills */
     .front-end {
@@ -520,7 +537,7 @@ form {
       font-size: 40px;
       font-family: Hack, sans-serif;
       text-transform: uppercase;
-      background: linear-gradient(90deg, #f36868, #df6060, #5c3636);
+      background: linear-gradient(90deg, #6237ce, #e2e22a, #6d32d3);
       letter-spacing: 5px;
       -webkit-background-clip: text;
       background-clip: text;
@@ -554,7 +571,7 @@ form {
 }
 
     .photo1 {
-      margin-left: 47%;
+      margin-left: 45%;
     }
 
     #projects {
@@ -566,9 +583,9 @@ form {
     button {
       border: none;
       border-radius: 20%;
-      background-color: maroon;
+      background-color: rgb(55, 7, 101);
       padding: 0.4%;
-      margin-left: 1px;
+      margin-right: 100px;
     }
     
 
@@ -581,9 +598,10 @@ form {
     }
     
      .navbar-nav {
-      margin-left: 45%;
+      margin-left: 75%;
 
     } 
+
 
     .project-row1 {
       /* display: grid; */
@@ -607,8 +625,8 @@ form {
 
      .card {
       width: 422px;
-      margin: 2px;
-      
+      padding: 22px;
+      margin: 20px 20px;
     } 
 
     .speech {
@@ -644,5 +662,4 @@ form {
         .contact {
           margin-left: 21px;
         }
-
   }
