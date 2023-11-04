@@ -299,7 +299,8 @@ form {
 
 /* footer */
 .footer-basic {
-  position: fixed;
+  position: sticky;
+  height: 100px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -375,7 +376,7 @@ form {
     }
 
     .skills {
-      margin-left: 190px;
+      margin-left: 100px;
       text-align: center;
       font-size: xx-large;
     }
@@ -443,6 +444,19 @@ form {
     }
   }
 
+  .footer-basic {
+    position: absolute;
+    height: 100px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(55, 6, 101);
+    color: white;
+    text-align: center;
+    line-height: -1px;
+    text-decoration: none;
+  }
   
 
   
@@ -535,6 +549,9 @@ form {
       font-size: xx-large;
      
     }
+
+
+    
 
     h1 {
       display: flex;
