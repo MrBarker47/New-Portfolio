@@ -275,15 +275,16 @@ form {
   
 }
 
-
-.speech, .speech1 {
-  color: black;
-  margin: 7%;
+.img {
+  margin-left: 50px;
 }
 
-.span1 {
-  float: right;
-  margin-right: 20px;
+.newSpeech, .newSpeech1 {
+  text-align: center;
+}
+
+.speech, .speech1 {
+  text-align: center;
 }
 
 .app {
@@ -298,7 +299,7 @@ form {
 
 
 /* footer */
-.footer-basic {
+ .footer-basic {
   position: sticky;
   height: 100px;
   left: 0;
@@ -310,7 +311,7 @@ form {
   text-align: center;
   line-height: -1px;
   text-decoration: none;
-}
+} 
 
 
 
@@ -444,8 +445,18 @@ form {
     }
   }
 
-  .footer-basic {
-    position: absolute;
+
+  /* footer {
+    background: #42A5F5;
+    color: white;
+    line-height: 50px;
+    padding: 0 20px;
+    
+  } */
+  
+
+  /* .footer-basic {
+    position: sticky;
     height: 100px;
     left: 0;
     right: 0;
@@ -456,7 +467,7 @@ form {
     text-align: center;
     line-height: -1px;
     text-decoration: none;
-  }
+  } */
   
 
   
@@ -509,6 +520,19 @@ form {
     }
 
 
+    #fix {
+      margin: -20px;
+    }
+    .app {
+      text-align: center;
+      background-color: aliceblue;
+      width: 100px;
+      border-radius: 20px;
+      margin-left: 1px;
+      margin-bottom: 20px;
+      align-self: center;
+    }
+    
 
 }
 
@@ -543,8 +567,7 @@ form {
     }
 
 
-     
-    .main-h1 {
+     .main-h1 {
       margin-top: 200px;
       font-size: xx-large;
      
@@ -609,13 +632,40 @@ form {
       background-color: rgb(55, 7, 101);
       padding: 0.4%;
       margin-right: 100px;
-    }
+  }
     
+
+    
+/* footer {
+  background: #42A5F5;
+  color: white;
+  line-height: 50px;
+  padding: 0 20px;
+  
+} */
+
+
+  .footer-basic {
+    position: absolute;
+    height: 90px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(55, 6, 101);
+    color: white;
+    text-align: center;
+    line-height: -1px;
+    text-decoration: none;
+  }
+  
 
     img {
       width: 120px;
       margin-top: 7px;
     }
+
+    
     .img {
       margin-left: 80px;
     }
@@ -647,6 +697,7 @@ form {
 
 
      .card {
+      height: 350px;
       width: 422px;
       padding: 22px;
       margin: 20px 20px;
